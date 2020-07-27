@@ -27,7 +27,7 @@ ylabel('Intensity (dB)')
 
 % plot the spectrum with power as the y-axis 
 figure;
-pspectrum(waveform,fs);
+pspectrum(waveform,fs, 'FrequencyLimits',[1 10000]);
 
 
 waveform = single( waveform(:, 1) );
